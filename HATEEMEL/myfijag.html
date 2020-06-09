@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>JAPASKRIPP GAEM!!</title>
+    </head>
+    <body>
+        <div id="start">
+            <h1 id="title">
+                <span style="color: rgb(110, 110, 110);">chrome://</span
+                ><span style="color: white;">dino</span
+                ><span id="ripoffText"> ripoff...</span>
+            </h1>
+            <div id="btns">
+                <button id="play">Play</button>
+                <br />
+                <button id="aboutb">About The Game</button>
+            </div>
+        </div>
+        <div id="game">
+            <!-- <h1 id="score">Score:</h1> -->
+            <div id="character">
+                <img
+                    id="charimg"
+                    src="charImg/character.png"
+                    width="20"
+                    height="50"
+                />
+            </div>
+            <div id="block">
+                <img src="blockImg/block.png" width="20" height="20" />
+            </div>
+            <div id="dedMenu">
+                <h1 id="dedTxt">lol ur ded</h1>
+                <button id="retry">Try Again</button>
+                <button id="menu">Go to menu</button>
+            </div>
+        </div>
+        <div id="about">
+            <h1>About This Game</h1>
+            <p id="ap">
+                This game is basically just like chrome://dino but worse...
+                <br />
+                but controls are the same.. <span>(</span>jump with<span
+                    >:</span
+                >
+                spacebar<span>/</span>up arrow<span>/</span>click<span>)</span>
+                <br />
+                <br />
+                If you want to make a game like this check out this video<span
+                    >:</span
+                >
+                <br />
+                <a
+                    href="https://www.youtube.com/watch?v=bG2BmmYr9NQ&t=2s"
+                    target="_blank"
+                >
+                    <button id="ytVid">
+                        I'm A Button That Will Lead You To A Cool Video!
+                    </button>
+                </a>
+                <br />
+                <br />
+                <button id="back">Go Back To Menu</button>
+            </p>
+        </div>
+
+        <audio id="jumpSfx" src="sfx/jump.wav"></audio>
+        <audio id="dedSfx" src="sfx/Mario Death Sound Effect.mp3"></audio>
+
+        <script src="app.js"></script>
+    </body>
+</html>

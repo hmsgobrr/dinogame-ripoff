@@ -1,30 +1,57 @@
+@font-face {
+    src: url(Symtext.ttf);
+    font-family: pxl;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 body {
-    background: rgb(20, 20, 20);
+    background: rgb(35, 35, 35);
     overflow-x: hidden;
+    font-family: pxl;
 }
-.txt {
+#start {
     position: absolute;
-    top: 30%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -30%);
-    font-family: sans-serif;
-    width: 100%;
+    transform: translate(-50%, -50%);
     text-align: center;
+}
+#title {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+#ripoffText {
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke: 1px white;
+}
+#btns button {
+    font-family: pxl;
+    background-color: #95a5a6;
+    border: none;
+    width: 140px;
+    height: 30px;
+    margin: 5px;
+}
+#btns button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 7px black;
 }
 #game {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: white;
+    background: rgb(130, 130, 130);
     width: 500px;
     height: 200px;
     border: 1px solid black;
     box-shadow: 0px 0px 7px black;
+}
+#score {
+    position: absolute;
 }
 #character {
     width: 20px;
@@ -57,6 +84,8 @@ body {
     position: relative;
     top: 130px;
     left: 480px;
+}
+.battack {
     animation: block 1s infinite linear;
 }
 @keyframes block {
@@ -66,4 +95,64 @@ body {
     100% {
         left: -40px;
     }
+}
+#dedMenu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.85);
+    color: red;
+}
+#dedMenu button {
+    font-family: pxl;
+    background-color: #95a5a6;
+    border: none;
+    width: 100px;
+    height: 30px;
+    margin: 5px;
+}
+#about {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+#about h1 {
+    color: white;
+}
+#ap span {
+    color: gray;
+}
+#ytVid {
+    font-family: pxl;
+    background-color: #95a5a6;
+    border: none;
+    width: 500px;
+    height: 30px;
+    margin: 5px;
+}
+#ytVid a {
+    text-decoration: none;
+    color: black;
+}
+#ytVid:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 7px black;
+}
+#back {
+    font-family: pxl;
+    background-color: #95a5a6;
+    border: none;
+    width: 200px;
+    height: 30px;
+    margin: 5px;
+}
+#back:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 7px black;
 }
